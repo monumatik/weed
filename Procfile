@@ -1,0 +1,1 @@
+web: gunicorn fitweed.wsgi --log-file -
