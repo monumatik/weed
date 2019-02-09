@@ -4,4 +4,4 @@ from django.db import models
 
 class Track(models.Model):
 	image = models.ImageField(upload_to='images/')
-	summary = models.CharField(max_length=1000)
+	YT_Link = models.CharField(max_length=1000)
