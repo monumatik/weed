@@ -68,10 +68,11 @@
 			</div>
 		</div>
 
+		<div class="row">
 		{% for track in tracks %}
-		<iframe width="560" height="315" src="{{ track.YT_Link }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="col-sm-6" width="560" height="315" src="{{ track.YT_Link }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		{% endfor %}
-
+		</div>
 
 
 		<footer class="text-muted">
