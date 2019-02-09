@@ -56,7 +56,7 @@ ROOT_URLCONF = 'fitweed.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['Templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'blog/Templates/blog')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
