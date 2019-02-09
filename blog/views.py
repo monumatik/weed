@@ -5,4 +5,4 @@ from django.core.paginator import Paginator
 
 def home(request):
 	tracks = Track.objects.all()
-	return render(request, "blog/home.html", {'tracks':tracks})
+	return render(request, "home.html", {'tracks':tracks})
