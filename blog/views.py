@@ -4,4 +4,4 @@ from .models import Track
 
 def home(request):
 	tracks = Track.objects.all()
-	return render(request, "home.html", {'tracks':tracks})
+	return render(request, "blog/home.html", {'tracks':tracks})
