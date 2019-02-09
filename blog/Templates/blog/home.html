@@ -21,7 +21,21 @@
 	<script src="{% static 'blog/script.js' %}">
 	</script>
 	<style type="text/css">
-		body {} /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+		@keyframes	slideInFromLeft {
+						0%	{
+					    		opacity: 0;
+					  		}
+					  	100%{
+					    		opacity: 100;
+					  		}
+					}
+		nav, footer, iframe {
+			opacity: 0;
+			animation-name: slideInFromLeft;
+			animation-duration: 4s;
+			animation-delay: 4s;
+			animation-fill-mode: forwards;
+		}
 	</style>
 </head>
 <body class="bg-dark">
