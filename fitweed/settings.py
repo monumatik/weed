@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'fitweed.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'fitweed',
-        'USER': 'postgres',
-        'PASSWORD': 'Patryk1901!',
-        'HOST': 'localhost',
+        'NAME': 'dem8m1vfqee1e',
+        'USER': 'llsmsjqvqtrxaq',
+        'PASSWORD': '9a9c88ae7b8a0dacb907188038309659ac4782e85c9ddc7515da10798065a54f',
+        'HOST': 'lec2-54-247-82-210.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
     }
 }
