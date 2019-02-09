@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -77,10 +78,10 @@ WSGI_APPLICATION = 'fitweed.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dem8m1vfqee1e',
-        'USER': 'llsmsjqvqtrxaq',
-        'PASSWORD': '9a9c88ae7b8a0dacb907188038309659ac4782e85c9ddc7515da10798065a54f',
-        'HOST': 'lec2-54-247-82-210.eu-west-1.compute.amazonaws.com',
+        'NAME': 'fitweed',
+        'USER': 'postgres',
+        'PASSWORD': 'Patryk1901!',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
@@ -122,10 +123,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'blog/static')
-]
+STATICFILES_DIRS = []
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+django_heroku.settings(locals())
