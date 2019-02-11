@@ -22,7 +22,7 @@ import blog.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ares/', blog.views.home, name='home'),
+    path('', blog.views.home, name='home'),
     url(r'^chat/', include('chat.urls')),
     re_path(r'^/bocza$', blog.views.home),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
