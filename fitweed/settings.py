@@ -75,11 +75,8 @@ WSGI_APPLICATION = 'fitweed.wsgi.application'
 ASGI_APPLICATION = 'fitweed.routing.application'
 CHANNEL_LAYERS = {
     'default': {
-        'BACKEND': 'channels_redis.core.RedisChannelLayer',
-        'CONFIG': {
-            "hosts": [('127.0.0.1', 6379)],
-        },
-    },
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
+     },
 }
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
@@ -139,4 +136,4 @@ STATIC_URL = '/staticfiles/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-#django_heroku.settings(locals())
+django_heroku.settings(locals())
