@@ -1,1 +1,1 @@
-web: daphne -b 0.0.0.0 -p $PORT fitweed.routing:application
+web: daphne fitweed.asgi:application -b 0.0.0.0 -p $PORT
