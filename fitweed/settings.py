@@ -76,7 +76,6 @@ ASGI_APPLICATION = 'fitweed.routing.application'
 CHANNEL_LAYERS = {
     'default': {
         "BACKEND": "channels.layers.InMemoryChannelLayer",
-        "ROUTING": "chat.routing.websocket_urlpatterns",
      },
 }
 # Database
