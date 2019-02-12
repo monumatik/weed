@@ -75,7 +75,8 @@ WSGI_APPLICATION = 'fitweed.wsgi.application'
 ASGI_APPLICATION = 'fitweed.routing.application'
 CHANNEL_LAYERS = {
     'default': {
-        "BACKEND": "channels.layers.InMemoryChannelLayer"
+        "BACKEND": "channels.layers.InMemoryChannelLayer",
+        "ROUTING": "chat.routing.websocket_urlpatterns",
      },
 }
 # Database
